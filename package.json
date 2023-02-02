@@ -1,0 +1,25 @@
+{
+  "name": "gassembley-vscode",
+  "displayName": "gAssembley-vscode",
+  "description": "language support for g assembly",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "g-assembly",
+      "aliases": ["g-assembly", "g-assembly"],
+      "extensions": [".ga",".gassembly"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "g-assembly",
+      "scopeName": "source.gassembly",
+      "path": "./syntaxes/g-assembly.tmLanguage.json"
+    }]
+  }
+}
