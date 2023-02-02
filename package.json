@@ -1,6 +1,6 @@
 {
-  "name": "gassembley-vscode",
-  "displayName": "gAssembley-vscode",
+  "name": "gassembly-vscode",
+  "displayName": "gAssembly-vscode",
   "description": "language support for g assembly",
   "version": "0.0.1",
   "engines": {
