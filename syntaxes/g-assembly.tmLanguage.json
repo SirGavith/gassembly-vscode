@@ -13,6 +13,9 @@
 		},
 		{
 			"include": "#comments"
+		},
+		{
+			"include": "#strings"
 		}
 	],
 	"repository": {
@@ -20,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.g-assembly",
-					"match": "\\b(alloc|define|load)\\b"
+					"match": "\\b(alloc|define|load|into|along)\\b"
 				}
 			]
 		},
@@ -36,7 +39,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric",
-					"match": "[%#\\$]?\\d+"
+					"match": "#?[%\\$]?[0-9A-F]+\\b"
 				}
 			]
 		},
@@ -45,6 +48,14 @@
 				{
 					"name": "comment.line",
 					"match": "//.*"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string",
+					"match": "'.*'"
 				}
 			]
 		}
