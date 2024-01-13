@@ -23,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.g-assembly",
-					"match": "\\b(alloc|define|load|into|along)\\b"
+					"match": "\\b(alloc|define|defineAddress|load|into|along)\\b"
 				}
 			]
 		},
